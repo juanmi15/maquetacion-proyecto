@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&display=swap" rel="stylesheet"> 
+    <title>SuperShoes | Store</title>
+    <style>
+    :root{
+        --light-green:#61d8c1;
+        --white: #FFFFFF;
+        --black: #000000;
+        --grey: #b1b1b1;
+        --light-grey: #f0f8f8;
+
+        --main-font: 'Nunito', sans-serif;
+        --pequeña: 1.2rem;
+        --mediana: 1.4rem;
+        --grande: 1.9rem;
+
+        }
+
+        html{
+            font-size: 62.5%;
+        }
+
+        body {
+        font-family: var(--main-font);
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+        background-color: var(--white);
+        }
+        
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        .form-container{
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            width: 30rem;
+        }
+        
+        .title{
+            font-size: var(--grande);
+            margin-bottom: 7rem;
+            align-items: flex-start;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            font-size: var(--mediana);
+            
+        }
+
+        label {
+            margin: 0.6rem 0 .1rem 0;
+            font-weight: bold;
+        }
+
+        /* input{
+            
+            /* background-color: var(--light-grey); */
+            /* border: none;
+            border-radius: 0.8rem;
+            font-size: var(--pequeña);
+            
+            padding: 1.5rem;
+            margin-bottom: .12rem;
+            margin-bottom: 1rem;
+        } */ 
+
+        .info-value{
+            font-weight: 300;
+            color: var(--grey);
+            font-size: var(--mediana);
+        }
+
+        input.btn{
+            background: var(--white);
+            border-radius: .8rem;
+            border: 1px solid var(--light-green);
+            padding: 1.5rem;
+            color: var(--light-green);
+            margin-top: 17rem;
+            width: 100%;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: var(--mediana);
+
+        }
+
+        @media (min-width: 64rem) {
+            input.btn{
+                margin-top: 1rem;
+
+            }
+        }
+
+        
+
+        
+        </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="form-container">
+        <h1 class="title">Mi cuenta</h1>
+
+        <form action="/" class="form" >
+            <label for="nombre" class="nombre">Nombre</label>
+            <p class="info-value">Juan Miguel</p>
+
+            <label for="email" class="email">Email</label>
+            <p class="info-value">jmiguel@correo.com</p>
+
+            <label for="contraseña" class="contraseña">Contraseña</label>
+            <p class="info-value">**********</p>
+            
+            
+        </form>
+        <input type="submit" value="Editar" class="btn">
+        
+        </div>
+    </div>
+    
+</body>
+</html>
